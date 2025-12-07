@@ -3,7 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { GraduationCap, Brain, TrendingUp, Target, ExternalLink } from "lucide-react"
+import { GraduationCap, TrendingUp, Calendar, UserCheck, ExternalLink } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
@@ -26,36 +26,35 @@ export function SATDemo() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge className="mb-4 bg-secondary text-secondary-foreground">Live Demo Available</Badge>
+              <Badge className="mb-4 bg-secondary text-secondary-foreground">Start Free Today</Badge>
               <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance tracking-tight">
-                See Our Engine in Action: <span className="text-primary">SAT Test Prep</span>
+                Boost Your SAT Score <span className="text-primary">with a Personal Tutor</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We&apos;ve built the world&apos;s first cognitive-powered SAT prep platform. Experience how our engine
-                understands your unique learning patterns and adapts in real-time to maximize your score improvement.
+                We create your personalized study plan. You just show up for 30 minutes a day.
               </p>
 
               <div className="space-y-4 mb-8">
                 {[
                   {
-                    icon: Brain,
-                    title: "Real-Time Cognitive Tracking",
+                    icon: TrendingUp,
+                    title: "Guaranteed Score Improvement",
                     description:
-                      "Watch as the system tracks your mastery probability for every SAT concept using Bayesian Knowledge Tracing",
+                      "Average 200+ point increase. We track your progress daily and guarantee results - or your money back",
                     color: "primary",
                   },
                   {
-                    icon: TrendingUp,
-                    title: "Adaptive Question Selection",
+                    icon: Calendar,
+                    title: "Your Personal Study Plan",
                     description:
-                      "Questions adapt to your cognitive patterns, focusing on concepts where you need the most growth",
+                      "We build you a custom schedule that fits your life. Just 30 minutes a day, and we handle the rest",
                     color: "secondary",
                   },
                   {
-                    icon: Target,
-                    title: "Personalized Learning Velocity",
+                    icon: UserCheck,
+                    title: "24/7 Attentive Tutor",
                     description:
-                      "Track your learning momentum and see predictions for your score improvement over time",
+                      "Like having a tutor who's always there - catching mistakes, explaining concepts, celebrating wins",
                     color: "accent",
                   },
                 ].map((item, index) => (
@@ -106,7 +105,7 @@ export function SATDemo() {
                     rel="noopener noreferrer"
                   >
                     <GraduationCap className="h-5 w-5" />
-                    Try for Free <ExternalLink className="h-4 w-4" />
+                    Start Your Free Week <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
               </motion.div>
@@ -121,14 +120,14 @@ export function SATDemo() {
               <Card className="p-8 bg-card/50 backdrop-blur hover:shadow-xl transition-shadow">
                 <div className="space-y-6">
                   <div>
-                    <div className="text-sm text-muted-foreground mb-2">Current Implementation</div>
-                    <h3 className="text-2xl font-bold mb-4">SAT Prep Platform</h3>
+                    <div className="text-sm text-muted-foreground mb-2">What You Get</div>
+                    <h3 className="text-2xl font-bold mb-4">Everything You Need to Succeed</h3>
                   </div>
 
                   <div className="space-y-4">
                     {[
-                      { label: "Math Concepts", value: "350+ Tracked", color: "primary" },
-                      { label: "Reading & Writing", value: "280+ Tracked", color: "secondary" },
+                      { label: "Average Score Increase", value: "+200 Points", color: "primary" },
+                      { label: "Daily Study Time", value: "30 Minutes", color: "secondary" },
                       { label: "Practice Questions", value: "2,000+", color: "accent" },
                     ].map((item, index) => (
                       <motion.div
@@ -162,21 +161,21 @@ export function SATDemo() {
                   </div>
 
                   <div className="pt-4 border-t border-border">
-                    <div className="text-sm text-muted-foreground mb-3">Powered By</div>
+                    <div className="text-sm text-muted-foreground mb-3">Join These Success Stories</div>
                     <div className="flex flex-wrap gap-2">
                       {[
-                        "Bayesian Knowledge Tracing",
-                        "OpenAI Integration",
-                        "Real-time Analytics",
-                        "Velocity Engine",
-                      ].map((tech, index) => (
+                        "95% Success Rate",
+                        "1,000+ Students",
+                        "Ivy League Ready",
+                        "Parent Approved",
+                      ].map((stat, index) => (
                         <motion.div
                           key={index}
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                           transition={{ duration: 0.3, delay: 0.7 + index * 0.05 }}
                         >
-                          <Badge variant="outline">{tech}</Badge>
+                          <Badge variant="outline">{stat}</Badge>
                         </motion.div>
                       ))}
                     </div>
