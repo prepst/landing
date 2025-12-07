@@ -53,7 +53,7 @@ export function Hero() {
             className="mb-6"
           >
             <motion.h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-              We don&apos;t just track scores, we understand{" "}
+              Your personal SAT tutor,{" "}
               <motion.span
                 className="text-primary inline-block"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -68,7 +68,7 @@ export function Hero() {
                   ease: [0.22, 1, 0.36, 1] as const,
                 }}
               >
-                your brain
+                powered by AI
               </motion.span>
             </motion.h1>
           </motion.div>
@@ -79,9 +79,8 @@ export function Hero() {
             animate={titleInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Revolutionary platform that models how the human brain learns,
-            identifies unique cognitive patterns, and optimizes learning through
-            personalized interventions.
+            We replicate what the best tutors do - understanding your strengths,
+            identifying gaps, and providing personalized practice to boost your SAT score.
           </motion.p>
 
           <motion.div
