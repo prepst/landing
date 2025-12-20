@@ -9,11 +9,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-center">
           <div className="flex items-center gap-6 px-4 py-2 rounded-full border border-border/30 bg-white/50 dark:bg-white/10 backdrop-blur-xl shadow-sm">
             <a href="/" className="flex items-center">
-              <img
-                src="/logo-2.svg"
-                alt="Prep St."
-                className="h-8 w-auto"
-              />
+              <img src="/logo-2.svg" alt="Prep St." className="h-8 w-auto" />
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a
@@ -21,12 +17,6 @@ export function Navigation() {
                 className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 SAT Demo
-              </a>
-              <a
-                href="/sdk"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                SDK
               </a>
             </div>
             <div className="flex items-center gap-3">

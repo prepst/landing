@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { WaitlistSignup } from "@/components/waitlist-signup";
 
 const titleVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -41,7 +40,7 @@ export function Hero() {
           >
             <GraduationCap className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-primary">
-              Powered by Cognitive Intelligence • Now Live with SAT Prep
+              Powered by Cognitive Intelligence • Try PrepSt for Free
             </span>
           </motion.div>
 
@@ -80,7 +79,8 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.6 }}
           >
             We replicate what the best tutors do - understanding your strengths,
-            identifying gaps, and providing personalized practice to boost your SAT score.
+            identifying gaps, and providing personalized practice to boost your
+            SAT score.
           </motion.p>
 
           <motion.div
@@ -99,7 +99,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Try SAT Demo <ArrowRight className="h-4 w-4" />
+                Free SAT Tutor <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
             {/* <Button
@@ -129,15 +129,6 @@ export function Hero() {
                 Documentation
               </a>
             </Button> */}
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-            className="mt-8 w-full"
-          >
-            <WaitlistSignup />
           </motion.div>
         </div>
       </div>
