@@ -136,7 +136,7 @@ export function Solution() {
               asChild
             >
               <a
-                href="https://satguide-demo-frontend.vercel.app/dashboard"
+                href="https://sat.prepst.com/dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
               >

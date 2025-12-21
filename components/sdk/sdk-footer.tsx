@@ -1,5 +1,5 @@
-import { Brain } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Brain } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function SDKFooter() {
   return (
@@ -12,7 +12,8 @@ export function SDKFooter() {
               <span className="text-lg font-semibold">PrepSt</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              The world's first cognitive learning engine powered by AI and cognitive science.
+              The world's first cognitive learning engine powered by AI and
+              cognitive science.
             </p>
           </div>
 
@@ -20,22 +21,34 @@ export function SDKFooter() {
             <h4 className="font-semibold">Documentation</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#quickstart" className="hover:text-foreground transition-colors">
+                <a
+                  href="#quickstart"
+                  className="hover:text-foreground transition-colors"
+                >
                   Quick Start
                 </a>
               </li>
               <li>
-                <a href="#authentication" className="hover:text-foreground transition-colors">
+                <a
+                  href="#authentication"
+                  className="hover:text-foreground transition-colors"
+                >
                   Authentication
                 </a>
               </li>
               <li>
-                <a href="#api" className="hover:text-foreground transition-colors">
+                <a
+                  href="#api"
+                  className="hover:text-foreground transition-colors"
+                >
                   API Reference
                 </a>
               </li>
               <li>
-                <a href="#examples" className="hover:text-foreground transition-colors">
+                <a
+                  href="#examples"
+                  className="hover:text-foreground transition-colors"
+                >
                   Code Examples
                 </a>
               </li>
@@ -52,7 +65,7 @@ export function SDKFooter() {
               </li>
               <li>
                 <a
-                  href="https://satguide-demo-frontend.vercel.app/"
+                  href="https://sat.prepst.com/dashboard"
                   className="hover:text-foreground transition-colors"
                 >
                   SAT Demo
@@ -73,7 +86,9 @@ export function SDKFooter() {
 
           <div className="space-y-3">
             <h4 className="font-semibold">Get Started</h4>
-            <p className="text-sm text-muted-foreground">Ready to build intelligent learning experiences?</p>
+            <p className="text-sm text-muted-foreground">
+              Ready to build intelligent learning experiences?
+            </p>
             <Button size="sm" className="w-full">
               Get API Key
             </Button>
@@ -85,5 +100,5 @@ export function SDKFooter() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

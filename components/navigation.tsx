@@ -21,7 +21,7 @@ export function Navigation() {
             </div>
             <div className="flex items-center gap-3">
               <a
-                href="https://satguide-demo-frontend.vercel.app/dashboard"
+                href="https://sat.prepst.com/dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-8 px-3 text-white transition-all"
