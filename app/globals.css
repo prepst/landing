@@ -7,63 +7,49 @@
 /* Clean, playful, premium - Student friendly SAT prep platform */
 
 :root {
-  /* PrepSt Product Colors - Dark theme with colorful accents */
-  --prepst-purple: oklch(0.55 0.20 290);
-  --prepst-purple-light: oklch(0.75 0.15 290);
-  --prepst-pink: oklch(0.70 0.18 350);
-  --prepst-pink-light: oklch(0.85 0.12 350);
-  --prepst-blue: oklch(0.65 0.18 250);
-  --prepst-blue-light: oklch(0.80 0.12 250);
-  --prepst-coral: oklch(0.72 0.16 30);
-  --prepst-coral-light: oklch(0.88 0.10 30);
-  --prepst-green: oklch(0.70 0.16 145);
-  --prepst-green-light: oklch(0.85 0.10 145);
-  --prepst-lavender: oklch(0.75 0.12 290);
-  --prepst-lavender-light: oklch(0.90 0.06 290);
+  /* PrepSt Core Colors */
+  --prepst-mint: oklch(0.85 0.12 165);
+  --prepst-mint-light: oklch(0.94 0.06 165);
+  --prepst-coral: oklch(0.75 0.14 25);
+  --prepst-coral-light: oklch(0.92 0.06 25);
+  --prepst-lavender: oklch(0.78 0.12 290);
+  --prepst-lavender-light: oklch(0.94 0.05 290);
+  --prepst-yellow: oklch(0.88 0.15 85);
+  --prepst-yellow-light: oklch(0.96 0.06 85);
 
-  /* Dark mode as default - matching product */
-  --background: oklch(0.14 0.015 280);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.18 0.02 280);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.18 0.02 280);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.65 0.20 290);
-  /* Purple */
+  /* Base palette - Light mode */
+  --background: oklch(0.995 0 0);
+  --foreground: oklch(0.15 0.02 270);
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.15 0.02 270);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.15 0.02 270);
+  --primary: oklch(0.55 0.18 165);
+  /* Deep mint */
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.70 0.18 350);
-  /* Pink */
+  --secondary: oklch(0.65 0.14 25);
+  /* Coral accent */
   --secondary-foreground: oklch(0.99 0 0);
-  --muted: oklch(0.22 0.02 280);
-  --muted-foreground: oklch(0.65 0.02 280);
-  --accent: oklch(0.65 0.18 250);
-  /* Blue */
+  --muted: oklch(0.96 0.01 270);
+  --muted-foreground: oklch(0.45 0.02 270);
+  --accent: oklch(0.68 0.12 290);
+  /* Lavender */
   --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.28 0.03 280);
-  --input: oklch(0.22 0.02 280);
-  --ring: oklch(0.65 0.20 290);
-  --chart-1: oklch(0.65 0.18 250);
-  /* Blue */
-  --chart-2: oklch(0.72 0.16 30);
-  /* Coral */
-  --chart-3: oklch(0.70 0.16 145);
-  /* Green */
-  --chart-4: oklch(0.75 0.12 290);
-  /* Lavender */
-  --chart-5: oklch(0.70 0.18 350);
-  /* Pink */
+  --border: oklch(0.92 0.01 270);
+  --input: oklch(0.96 0.01 270);
+  --ring: oklch(0.55 0.18 165);
+  --chart-1: oklch(0.55 0.18 165);
+  --chart-2: oklch(0.65 0.14 25);
+  --chart-3: oklch(0.68 0.12 290);
+  --chart-4: oklch(0.75 0.15 85);
+  --chart-5: oklch(0.60 0.15 200);
   --radius: 1.25rem;
 
   /* PrepSt specific */
   --score-gold: oklch(0.80 0.16 85);
-  --score-glow: oklch(0.65 0.18 250 / 0.4);
-  /* Blue glow like product */
-
-  /* Hero gradient matching product */
-  --hero-gradient-start: oklch(0.50 0.18 290);
-  --hero-gradient-end: oklch(0.55 0.16 350);
+  --score-glow: oklch(0.80 0.16 85 / 0.4);
 }
 
 .dark {
@@ -145,13 +131,13 @@
   letter-spacing: -0.04em;
   line-height: 0.9;
   background: linear-gradient(135deg,
-      var(--prepst-blue) 0%,
-      var(--prepst-purple) 40%,
-      var(--prepst-pink) 100%);
+      oklch(0.55 0.18 165) 0%,
+      oklch(0.45 0.20 175) 40%,
+      oklch(0.58 0.14 290) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 20px 60px oklch(0.65 0.18 250 / 0.35));
+  filter: drop-shadow(0 20px 60px oklch(0.55 0.18 165 / 0.25));
 }
 
 .prepst-heading-xl {
@@ -321,50 +307,42 @@
 
 .prepst-gradient-hero {
   background: linear-gradient(180deg,
-      var(--background) 0%,
-      oklch(0.16 0.04 290 / 0.8) 50%,
-      var(--background) 100%);
+      oklch(0.995 0 0) 0%,
+      oklch(0.97 0.02 165 / 0.3) 50%,
+      oklch(0.995 0 0) 100%);
 }
 
 .prepst-gradient-soft {
   background: linear-gradient(135deg,
-      oklch(0.16 0.03 290) 0%,
-      var(--background) 50%,
-      oklch(0.16 0.03 350) 100%);
+      var(--prepst-mint-light) 0%,
+      oklch(0.995 0 0) 50%,
+      var(--prepst-lavender-light) 100%);
 }
 
 .prepst-gradient-coral {
   background: linear-gradient(135deg,
-      oklch(0.18 0.04 30) 0%,
-      var(--background) 100%);
+      var(--prepst-coral-light) 0%,
+      oklch(0.995 0 0) 100%);
 }
 
 .prepst-gradient-dark {
   background: linear-gradient(135deg,
-      oklch(0.10 0.04 280) 0%,
-      oklch(0.08 0.05 290) 50%,
-      oklch(0.10 0.04 260) 100%);
+      oklch(0.12 0.03 270) 0%,
+      oklch(0.08 0.04 280) 50%,
+      oklch(0.10 0.03 260) 100%);
 }
 
 /* ==================== BLOB DECORATIONS ==================== */
 
 .blob {
   position: absolute;
-  filter: blur(80px);
-  opacity: 0.4;
+  filter: blur(60px);
+  opacity: 0.5;
   pointer-events: none;
 }
 
 .blob-mint {
-  background: var(--prepst-blue);
-}
-
-.blob-purple {
-  background: var(--prepst-purple);
-}
-
-.blob-pink {
-  background: var(--prepst-pink);
+  background: var(--prepst-mint);
 }
 
 .blob-coral {
@@ -383,23 +361,23 @@
 
 .prepst-btn-primary {
   background: linear-gradient(135deg,
-      var(--prepst-purple) 0%,
-      var(--prepst-pink) 100%);
+      oklch(0.55 0.18 165) 0%,
+      oklch(0.50 0.20 175) 100%);
   color: white;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: var(--radius);
   box-shadow:
-    0 4px 20px oklch(0.55 0.20 290 / 0.4),
-    0 0 0 0 oklch(0.55 0.20 290 / 0);
+    0 4px 20px oklch(0.55 0.18 165 / 0.35),
+    0 0 0 0 oklch(0.55 0.18 165 / 0);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prepst-btn-primary:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow:
-    0 8px 30px oklch(0.55 0.20 290 / 0.5),
-    0 0 0 4px oklch(0.55 0.20 290 / 0.2);
+    0 8px 30px oklch(0.55 0.18 165 / 0.45),
+    0 0 0 4px oklch(0.55 0.18 165 / 0.15);
 }
 
 .prepst-btn-primary:active {
@@ -407,75 +385,75 @@
 }
 
 .prepst-btn-secondary {
-  background: var(--card);
-  color: var(--foreground);
+  background: oklch(0.99 0 0);
+  color: oklch(0.25 0.02 270);
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: var(--radius);
-  border: 2px solid var(--border);
-  box-shadow: 0 2px 10px oklch(0 0 0 / 0.2);
+  border: 2px solid oklch(0.90 0.01 270);
+  box-shadow: 0 2px 10px oklch(0 0 0 / 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prepst-btn-secondary:hover {
-  border-color: var(--prepst-purple);
-  background: oklch(0.22 0.04 290);
+  border-color: var(--prepst-mint);
+  background: var(--prepst-mint-light);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px oklch(0.55 0.20 290 / 0.2);
+  box-shadow: 0 4px 20px oklch(0.55 0.18 165 / 0.15);
 }
 
 /* ==================== PREPST CARDS ==================== */
 
 .prepst-card {
-  background: var(--card);
+  background: oklch(0.995 0 0);
   border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border: 1px solid oklch(0.94 0.01 270);
   box-shadow:
-    0 4px 6px oklch(0 0 0 / 0.1),
-    0 10px 30px oklch(0 0 0 / 0.15);
+    0 4px 6px oklch(0 0 0 / 0.02),
+    0 10px 30px oklch(0 0 0 / 0.04);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prepst-card:hover {
   transform: translateY(-6px);
   box-shadow:
-    0 10px 20px oklch(0 0 0 / 0.15),
-    0 20px 60px oklch(0 0 0 / 0.25);
-  border-color: var(--prepst-purple);
+    0 10px 20px oklch(0 0 0 / 0.04),
+    0 20px 60px oklch(0 0 0 / 0.08);
+  border-color: oklch(0.90 0.02 270);
 }
 
-.prepst-card-blue {
+.prepst-card-mint {
   background: linear-gradient(135deg,
-      oklch(0.20 0.06 250) 0%,
-      var(--card) 100%);
+      var(--prepst-mint-light) 0%,
+      oklch(0.995 0 0) 100%);
 }
 
 .prepst-card-coral {
   background: linear-gradient(135deg,
-      oklch(0.22 0.06 30) 0%,
-      var(--card) 100%);
+      var(--prepst-coral-light) 0%,
+      oklch(0.995 0 0) 100%);
 }
 
 .prepst-card-lavender {
   background: linear-gradient(135deg,
-      oklch(0.22 0.06 290) 0%,
-      var(--card) 100%);
+      var(--prepst-lavender-light) 0%,
+      oklch(0.995 0 0) 100%);
 }
 
-.prepst-card-green {
+.prepst-card-yellow {
   background: linear-gradient(135deg,
-      oklch(0.20 0.06 145) 0%,
-      var(--card) 100%);
+      var(--prepst-yellow-light) 0%,
+      oklch(0.995 0 0) 100%);
 }
 
 /* ==================== SCORE IMPROVEMENT CARDS ==================== */
 
 .score-card {
-  background: var(--card);
+  background: oklch(0.995 0 0);
   border-radius: var(--radius-xl);
   padding: 1.5rem 2rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 20px oklch(0 0 0 / 0.15);
+  border: 1px solid oklch(0.94 0.01 270);
+  box-shadow: 0 4px 20px oklch(0 0 0 / 0.04);
 }
 
 .score-badge {
@@ -487,7 +465,7 @@
 }
 
 .score-old {
-  color: oklch(0.55 0.02 280);
+  color: oklch(0.55 0.02 270);
   text-decoration: line-through;
   text-decoration-color: oklch(0.75 0.02 270);
 }
