@@ -10,8 +10,8 @@ export function PrepstHero() {
 
 
             {/* Floating Mascots - Now with actual images */}
-            <motion.div
-                className="absolute top-24 left-[10%] w-24 h-24 md:w-32 md:h-32 float-gentle z-20"
+            {/* <motion.div
+                className="hidden md:block absolute top-24 left-[10%] w-24 h-24 md:w-32 md:h-32 float-gentle z-20"
                 initial={{ opacity: 0, scale: 0.5, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
@@ -23,10 +23,10 @@ export function PrepstHero() {
                     height={128}
                     className="w-full h-full object-contain drop-shadow-lg"
                 />
-            </motion.div>
+            </motion.div> */}
 
-            <motion.div
-                className="absolute top-32 right-[12%] w-20 h-20 md:w-28 md:h-28 float-bounce float-delayed-1 z-20"
+            {/* <motion.div
+                className="hidden md:block absolute top-32 right-[12%] w-20 h-20 md:w-28 md:h-28 float-bounce float-delayed-1 z-20"
                 initial={{ opacity: 0, scale: 0.5, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.6, type: "spring" }}
@@ -38,10 +38,10 @@ export function PrepstHero() {
                     height={112}
                     className="w-full h-full object-contain drop-shadow-lg"
                 />
-            </motion.div>
+            </motion.div> */}
 
-            <motion.div
-                className="absolute bottom-36 left-[15%] w-18 h-18 md:w-24 md:h-24 float-sway float-delayed-2 z-20"
+            {/* <motion.div
+                className="hidden md:block absolute bottom-36 left-[15%] w-18 h-18 md:w-24 md:h-24 float-sway float-delayed-2 z-20"
                 initial={{ opacity: 0, scale: 0.5, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.6, type: "spring" }}
@@ -56,7 +56,7 @@ export function PrepstHero() {
             </motion.div>
 
             <motion.div
-                className="absolute bottom-40 right-[18%] w-16 h-16 md:w-20 md:h-20 float-gentle float-delayed-3 z-20"
+                className="hidden md:block absolute bottom-40 right-[18%] w-16 h-16 md:w-20 md:h-20 float-gentle float-delayed-3 z-20"
                 initial={{ opacity: 0, scale: 0.5, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 1.1, duration: 0.6, type: "spring" }}
@@ -68,7 +68,7 @@ export function PrepstHero() {
                     height={80}
                     className="w-full h-full object-contain drop-shadow-lg"
                 />
-            </motion.div>
+            </motion.div> */}
 
             {/* Content */}
             <div className="prepst-container relative z-10 text-center px-6">
