@@ -4,14 +4,20 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+})
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+})
 
 export const metadata: Metadata = {
-  title: "PrepSt - The World's First Cognitive Learning Engine",
+  title: "PrepSt - Your Path to a Top SAT Score",
   description:
-    "Revolutionary platform that models how the human brain learns, identifies unique cognitive patterns, and optimizes learning through personalized interventions.",
-  generator: "v0.app",
+    "Personalized SAT prep that adapts to how you learn. Smarter practice, targeted review, and real exam insights—all in one place.",
+  generator: "PrepSt",
 }
 
 export default function RootLayout({
@@ -20,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans antialiased`}>
+    <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
