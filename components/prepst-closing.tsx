@@ -10,7 +10,7 @@ export function PrepstClosing() {
             {/* Full-bleed Journey Scene */}
             <div className="relative">
                 <Image
-                    src="/journey-scene.png"
+                    src="/journal.png"
                     alt="Journey to 1600"
                     width={1920}
                     height={1080}
