@@ -7,10 +7,7 @@ import Image from "next/image"
 export function PrepstHero() {
     return (
         <section className="prepst-gradient-hero relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-            {/* Decorative Blobs */}
-            <div className="blob blob-mint w-[600px] h-[600px] -top-40 -left-40 blob-morph" />
-            <div className="blob blob-lavender w-[500px] h-[500px] top-1/4 -right-32 blob-morph float-delayed-1" />
-            <div className="blob blob-coral w-[400px] h-[400px] bottom-20 left-1/4 blob-morph float-delayed-2" />
+
 
             {/* Floating Mascots - Now with actual images */}
             <motion.div
@@ -89,18 +86,25 @@ export function PrepstHero() {
                     >
                         <span className="text-2xl">🎓</span>
                         <span className="font-medium text-sm text-[oklch(0.35_0.02_270)]">
-                            Join 50,000+ students crushing the SAT
+                            Join 5,000+ students crushing the SAT
                         </span>
                     </motion.div>
 
-                    {/* Hero Score Number */}
+                    {/* Hero Image */}
                     <motion.div
-                        className="prepst-hero-score score-glow mb-4"
+                        className="mb-8"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3, duration: 0.6, type: "spring" }}
                     >
-                        1600
+                        <Image
+                            src="/hero.png"
+                            alt="PrepSt Hero"
+                            width={1000}
+                            height={800}
+                            className="w-full max-w-3xl mx-auto h-auto object-contain"
+                            priority
+                        />
                     </motion.div>
 
                     {/* Headline */}
@@ -111,7 +115,7 @@ export function PrepstHero() {
                         transition={{ delay: 0.5 }}
                     >
                         Your dream score{" "}
-                        <span className="bg-gradient-to-r from-[oklch(0.55_0.18_165)] to-[oklch(0.68_0.12_290)] bg-clip-text text-transparent">
+                        <span className="text-black">
                             starts here.
                         </span>
                     </motion.h1>
@@ -163,7 +167,7 @@ export function PrepstHero() {
                                 ))}
                             </div>
                             <span className="text-sm text-[oklch(0.45_0.02_270)]">
-                                <strong className="text-[oklch(0.25_0.02_270)]">50,000+</strong> students
+                                <strong className="text-[oklch(0.25_0.02_270)]">5,000+</strong> students
                             </span>
                         </div>
                         <div className="flex items-center gap-2">
