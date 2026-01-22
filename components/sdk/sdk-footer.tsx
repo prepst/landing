@@ -65,20 +65,20 @@ export function SDKFooter() {
               </li>
               <li>
                 <a
-                  href="https://sat.prepst.com/dashboard"
+                  href="https://sat.prepst.com/"
                   className="hover:text-foreground transition-colors"
                 >
                   SAT Demo
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Blog
+                <a href="/sdk" className="hover:text-foreground transition-colors">
+                  SDK Docs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Support
+                <a href="mailto:hello@prepst.com" className="hover:text-foreground transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -89,8 +89,10 @@ export function SDKFooter() {
             <p className="text-sm text-muted-foreground">
               Ready to build intelligent learning experiences?
             </p>
-            <Button size="sm" className="w-full">
-              Get API Key
+            <Button size="sm" className="w-full" asChild>
+              <a href="https://sat.prepst.com/" target="_blank" rel="noopener noreferrer">
+                Get started
+              </a>
             </Button>
           </div>
         </div>

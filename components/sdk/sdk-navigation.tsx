@@ -72,7 +72,11 @@ export function SDKNavigation() {
                 <Github className="h-4 w-4" />
               </a>
             </Button>
-            <Button size="sm">Get API Key</Button>
+            <Button size="sm" asChild>
+              <a href="https://sat.prepst.com/" target="_blank" rel="noopener noreferrer">
+                Get started
+              </a>
+            </Button>
           </div>
           </div>
         </div>

@@ -136,7 +136,7 @@ export function Solution() {
               asChild
             >
               <a
-                href="https://sat.prepst.com/dashboard"
+                href="https://sat.prepst.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

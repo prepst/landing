@@ -34,28 +34,28 @@ export function PrepstNav() {
           >
             Results
           </Link>
-          <Link 
-            href="#pricing" 
+          <a
+            href="https://sat.prepst.com/"
             className="text-sm font-medium text-[oklch(0.45_0.02_270)] hover:text-[oklch(0.25_0.02_270)] transition-colors"
           >
-            Pricing
-          </Link>
+            SAT App
+          </a>
         </div>
 
         {/* CTA */}
         <div className="flex items-center gap-3">
-          <Link 
-            href="/login"
+          <a
+            href="https://sat.prepst.com/"
             className="hidden sm:block text-sm font-medium text-[oklch(0.45_0.02_270)] hover:text-[oklch(0.25_0.02_270)] transition-colors"
           >
             Log in
-          </Link>
-          <Link 
-            href="/signup"
+          </a>
+          <a
+            href="https://sat.prepst.com/"
             className="prepst-btn-primary text-sm py-2 px-5"
           >
             Start Free
-          </Link>
+          </a>
         </div>
       </div>
     </motion.nav>

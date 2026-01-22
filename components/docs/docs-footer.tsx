@@ -18,7 +18,7 @@ export function DocsFooter() {
               Building the world's first cognitive learning engine that understands how humans learn.
             </p>
             <Button asChild>
-              <a href="https://sat.prepst.com/dashboard" target="_blank" rel="noopener noreferrer">
+              <a href="https://sat.prepst.com/" target="_blank" rel="noopener noreferrer">
                 Try SAT Demo <ArrowRight className="h-4 w-4 ml-2" />
               </a>
             </Button>

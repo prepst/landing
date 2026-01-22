@@ -38,10 +38,13 @@ export function PrepstClosing() {
                         </p>
 
                         {/* Final CTA */}
-                        <button className="prepst-btn-primary text-lg flex items-center gap-2 mx-auto">
+                        <a
+                            href="https://sat.prepst.com/"
+                            className="prepst-btn-primary text-lg flex items-center gap-2 mx-auto"
+                        >
                             Start your journey
                             <ArrowRight className="w-5 h-5" />
-                        </button>
+                        </a>
                     </motion.div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ export function Navigation() {
             </div>
             
             <motion.a
-              href="https://sat.prepst.com/dashboard"
+              href="https://sat.prepst.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-button inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold h-10 px-6 text-white"
