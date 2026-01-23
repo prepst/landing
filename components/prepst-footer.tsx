@@ -3,26 +3,17 @@ import Link from "next/link"
 const footerLinks = {
     Product: [
         { label: "Features", href: "#features" },
-        { label: "Pricing", href: "#pricing" },
-        { label: "Practice Tests", href: "/practice" },
-        { label: "Vocabulary", href: "/vocab" },
+        { label: "Results", href: "#testimonials" },
+        { label: "SAT App", href: "https://sat.prepst.com/" },
+        { label: "SDK", href: "/sdk" },
     ],
     Resources: [
-        { label: "SAT Guide", href: "/guide" },
-        { label: "Study Tips", href: "/tips" },
-        { label: "Blog", href: "/blog" },
-        { label: "FAQ", href: "/faq" },
+        { label: "Home", href: "/" },
+        { label: "SDK Docs", href: "/sdk" },
+        { label: "Try PrepSt", href: "https://sat.prepst.com/" },
     ],
     Company: [
-        { label: "About", href: "/about" },
-        { label: "Careers", href: "/careers" },
-        { label: "Contact", href: "/contact" },
-        { label: "Press", href: "/press" },
-    ],
-    Legal: [
-        { label: "Privacy", href: "/privacy" },
-        { label: "Terms", href: "/terms" },
-        { label: "Cookies", href: "/cookies" },
+        { label: "Contact", href: "mailto:hello@prepst.com" },
     ],
 }
 
@@ -71,12 +62,21 @@ export function PrepstFooter() {
                             <ul className="space-y-2.5">
                                 {links.map((link) => (
                                     <li key={link.label}>
-                                        <Link
-                                            href={link.href}
-                                            className="text-sm text-[oklch(0.50_0.02_270)] hover:text-[oklch(0.55_0.18_165)] transition-colors"
-                                        >
-                                            {link.label}
-                                        </Link>
+                                        {link.href.startsWith("/") ? (
+                                            <Link
+                                                href={link.href}
+                                                className="text-sm text-[oklch(0.50_0.02_270)] hover:text-[oklch(0.55_0.18_165)] transition-colors"
+                                            >
+                                                {link.label}
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                href={link.href}
+                                                className="text-sm text-[oklch(0.50_0.02_270)] hover:text-[oklch(0.55_0.18_165)] transition-colors"
+                                            >
+                                                {link.label}
+                                            </a>
+                                        )}
                                     </li>
                                 ))}
                             </ul>

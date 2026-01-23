@@ -138,14 +138,20 @@ export function PrepstHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
                     >
-                        <button className="prepst-btn-primary flex items-center gap-2 text-lg">
+                        <a
+                            href="https://sat.prepst.com/"
+                            className="prepst-btn-primary flex items-center gap-2 text-lg"
+                        >
                             Get started
                             <ArrowRight className="w-5 h-5" />
-                        </button>
-                        <button className="prepst-btn-secondary flex items-center gap-2 text-lg">
+                        </a>
+                        <a
+                            href="#features"
+                            className="prepst-btn-secondary flex items-center gap-2 text-lg"
+                        >
                             <PlayCircle className="w-5 h-5" />
                             See how it works
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Trust Signals */}

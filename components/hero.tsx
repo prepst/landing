@@ -131,7 +131,7 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <motion.a
-              href="https://sat.prepst.com/dashboard"
+              href="https://sat.prepst.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-button inline-flex items-center justify-center gap-3 rounded-full text-lg font-semibold h-14 px-8 text-white group"

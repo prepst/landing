@@ -96,7 +96,9 @@ function FeatureSection({
                             {feature.description}
                         </p>
 
-                        <button className={`inline-flex items-center gap-2 font-semibold text-sm transition-colors ${feature.color === 'mint' ? 'text-[oklch(0.45_0.15_165)] hover:text-[oklch(0.35_0.18_165)]' :
+                        <a
+                            href="https://sat.prepst.com/"
+                            className={`inline-flex items-center gap-2 font-semibold text-sm transition-colors ${feature.color === 'mint' ? 'text-[oklch(0.45_0.15_165)] hover:text-[oklch(0.35_0.18_165)]' :
                                 feature.color === 'coral' ? 'text-[oklch(0.50_0.14_25)] hover:text-[oklch(0.40_0.16_25)]' :
                                     feature.color === 'lavender' ? 'text-[oklch(0.50_0.12_290)] hover:text-[oklch(0.40_0.14_290)]' :
                                         'text-[oklch(0.50_0.15_85)] hover:text-[oklch(0.40_0.18_85)]'
@@ -105,7 +107,7 @@ function FeatureSection({
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Illustration */}
