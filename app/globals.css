@@ -360,24 +360,22 @@
 /* ==================== PREPST BUTTONS ==================== */
 
 .prepst-btn-primary {
-  background: linear-gradient(135deg,
-      oklch(0.55 0.18 165) 0%,
-      oklch(0.50 0.20 175) 100%);
-  color: white;
+  background: #dad3fd;
+  color: #866eff;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: var(--radius);
   box-shadow:
-    0 4px 20px oklch(0.55 0.18 165 / 0.35),
-    0 0 0 0 oklch(0.55 0.18 165 / 0);
+    0 4px 20px rgba(134, 110, 255, 0.25),
+    0 0 0 0 transparent;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prepst-btn-primary:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow:
-    0 8px 30px oklch(0.55 0.18 165 / 0.45),
-    0 0 0 4px oklch(0.55 0.18 165 / 0.15);
+    0 8px 30px rgba(134, 110, 255, 0.35),
+    0 0 0 4px rgba(134, 110, 255, 0.15);
 }
 
 .prepst-btn-primary:active {

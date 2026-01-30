@@ -14,10 +14,7 @@ export function PrepstNav() {
       <div className="prepst-container flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[oklch(0.55_0.18_165)] to-[oklch(0.50_0.20_175)] flex items-center justify-center">
-            <span className="text-white font-bold text-sm">P</span>
-          </div>
-          <span className="font-bold text-xl text-[oklch(0.15_0.02_270)]">PrepSt</span>
+          <img src="/logo-2.svg" alt="PrepSt" className="h-8 w-auto" />
         </Link>
 
         {/* Nav Links */}
