@@ -84,7 +84,7 @@ export function NavV2() {
                 href="https://sat.prepst.com/"
                 className="bg-[#dad3fd] text-[#674bc4] text-sm font-medium px-5 py-2.5 rounded-xl hover:bg-[#c8befc] transition-colors shadow-lg shadow-[#dad3fd_/_0.3]"
               >
-                Get Started
+                Start Free
               </a>
             </div>
 
@@ -135,7 +135,7 @@ export function NavV2() {
                   href="https://sat.prepst.com/"
                   className="block text-center bg-[#dad3fd] text-[#674bc4] font-medium px-5 py-3 rounded-xl"
                 >
-                  Get Started Free
+                  Start Free
                 </a>
               </div>
             </div>

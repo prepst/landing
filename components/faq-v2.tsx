@@ -7,7 +7,7 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react"
 const faqs = [
   {
     question: "How is PrepSt different from Khan Academy or other free resources?",
-    answer: "While Khan Academy offers great practice questions, they give everyone the same questions in the same order. PrepSt's AI adapts to YOUR specific learning patterns - it learns how you think, predicts where you'll struggle, and serves questions at your exact level. It's like having a $200/hour tutor who knows you inside and out, but free. Our students improve an average of 215 points vs 50-80 with traditional methods."
+    answer: "PrepSt is built to adapt to you. Instead of sending every student through the same sequence, it learns how you answer, where you slow down, and what you are ready for next. It is also built by students, so the experience feels simpler, faster, and more useful day to day."
   },
   {
     question: "How quickly will I see results?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Is PrepSt really free? What's the catch?",
-    answer: "Yes, PrepSt is completely free with no credit card required. We believe every student deserves access to quality SAT prep regardless of their family's income. We may introduce premium features in the future, but the core adaptive learning engine will always be free."
+    answer: "Yes. PrepSt is completely free. No credit card, no hidden upgrade, no catch. We built it because students should have access to serious SAT prep without having to pay for it."
   },
   {
     question: "How accurate are the score predictions?",
@@ -139,7 +139,7 @@ export function FAQV2() {
             className="inline-flex items-center gap-2 text-[#674bc4] font-medium hover:underline"
           >
             <MessageCircle className="w-4 h-4" />
-            Chat with our team
+            Chat with the student team
           </a>
         </motion.div>
       </div>

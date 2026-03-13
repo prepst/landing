@@ -56,13 +56,14 @@ export function FeaturesV2() {
         >
           <div className="inline-flex items-center gap-2 bg-[#dad3fd_/_0.4] text-[#674bc4] rounded-full px-4 py-2 text-sm font-medium mb-6">
             <Zap className="w-4 h-4" />
-            Powerful Features
+            Free, student-first features
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Everything you need to crush the SAT
+            Everything you need to prep well
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Built by students who aced the SAT, backed by cognitive science, powered by AI.
+            Built by students who know the pressure, refined enough to feel polished,
+            and completely free from the start.
           </p>
         </motion.div>
 

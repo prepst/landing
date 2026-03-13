@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { XCircle, Clock, DollarSign, Brain, Frown, AlertTriangle } from "lucide-react"
+import { XCircle, Clock, Brain, Frown, AlertTriangle, Users } from "lucide-react"
 
 const problems = [
   {
@@ -10,9 +10,9 @@ const problems = [
     description: "Traditional prep books give everyone the same questions. You're either bored with easy stuff or overwhelmed by things you're not ready for.",
   },
   {
-    icon: DollarSign,
-    title: "Spending $2000+ on tutors",
-    description: "Private SAT tutors charge $100-300/hour. Most families can't afford that, so students are left to figure it out alone.",
+    icon: Users,
+    title: "Using prep that was never built for students",
+    description: "Too many tools feel corporate, generic, and disconnected from real student routines. You need something that understands how students actually study.",
   },
   {
     icon: Brain,
@@ -42,11 +42,11 @@ export function ProblemV2() {
             The SAT prep struggle is real
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Why most students never reach their target score
+            Why most SAT prep still feels broken
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            If you have tried SAT prep before and felt frustrated, you are not alone. 
-            The traditional approach is fundamentally broken.
+            Students do not need more noise. They need smart practice, clear progress,
+            and a platform that actually feels made for them.
           </p>
         </motion.div>
 

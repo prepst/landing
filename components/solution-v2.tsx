@@ -51,17 +51,17 @@ export function SolutionV2() {
         >
           <div className="inline-flex items-center gap-2 bg-[#dad3fd_/_0.4] text-[#674bc4] rounded-full px-4 py-2 text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            The PrepSt Difference
+            The student-built difference
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            How we turn strugglers into{" "}
+            How PrepSt helps you study{" "}
             <span className="bg-gradient-to-r from-[#674bc4] to-[#9575e0] bg-clip-text text-transparent">
-              top scorers
+              smarter every day
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our Cognitive Learning Engine adapts to your unique learning patterns, 
-            making every minute of study count.
+            We built PrepSt to feel focused, clear, and genuinely helpful. Every session
+            adapts to you, so your study time actually moves your score.
           </p>
         </motion.div>
 
@@ -85,38 +85,6 @@ export function SolutionV2() {
                   className="object-contain relative z-10 drop-shadow-2xl"
                 />
               </div>
-              
-              <motion.div
-                className="absolute top-8 right-0 bg-white rounded-xl p-3 shadow-lg border border-gray-100"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#dad3fd] rounded-lg flex items-center justify-center">
-                    <Target className="w-4 h-4 text-[#674bc4]" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-gray-500">Accuracy</div>
-                    <div className="text-sm font-bold text-gray-900">87%</div>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="absolute bottom-16 left-0 bg-white rounded-xl p-3 shadow-lg border border-gray-100"
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#e8e4fc] rounded-lg flex items-center justify-center">
-                    <Brain className="w-4 h-4 text-[#674bc4]" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-gray-500">Cognitive Match</div>
-                    <div className="text-sm font-bold text-gray-900">Perfect</div>
-                  </div>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
 
@@ -157,11 +125,11 @@ export function SolutionV2() {
                 href="https://sat.prepst.com/"
                 className="inline-flex items-center gap-2 bg-[#dad3fd] text-[#674bc4] font-semibold px-6 py-3 rounded-xl hover:bg-[#c8befc] transition-colors shadow-lg shadow-[#dad3fd_/_0.3]"
               >
-                Try it free
+                Use PrepSt Free
                 <ArrowRight className="w-4 h-4" />
               </a>
               <p className="text-sm text-gray-500 mt-3">
-                No credit card required. Start improving in 5 minutes.
+                Completely free. Built by students for students.
               </p>
             </motion.div>
           </div>
