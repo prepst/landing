@@ -148,7 +148,7 @@ export function HomepageClient() {
             <div className="avatar-wrap">
               <div className="avatar-halo" aria-hidden="true" />
               <div className="avatar-canvas">
-                <Peppa animation="idle" size="100%" ariaLabel="Peppa, your SAT study guide" />
+                <Peppa animation="landing-showcase" size="100%" ariaLabel="Peppa, your SAT study guide" />
               </div>
               <div className="orb-card">
                 <ThinkingOrb

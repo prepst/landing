@@ -1702,6 +1702,71 @@
         "description": "Cet état enchaîne un pool de presets et des clignements.",
         "group": "Réactions"
       }
+    },
+    "landing-showcase": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "attentive-left",
+          "holdMs": 1100,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "curious-left",
+          "holdMs": 1150,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "upward-side-glance",
+          "holdMs": 1200,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "joyful-wide",
+          "holdMs": 1350,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "playful-right",
+          "holdMs": 1150,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "surprised-left",
+          "holdMs": 1050,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "joyful-down-right",
+          "holdMs": 1350,
+          "transitionMs": 450,
+          "transition": "smooth"
+        },
+        {
+          "expression": "gentle-downward-gaze",
+          "holdMs": 1200,
+          "transitionMs": 450,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1600,
+        "minIntervalMs": 2400,
+        "maxIntervalMs": 4200,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "landing showcase",
+        "description": "A quick, friendly loop for Peppa's landing-page presence.",
+        "group": "PrepSt"
+      }
     }
   },
   "animationOrder": [
@@ -1727,6 +1792,7 @@
     "laughing",
     "scared",
     "playful",
-    "celebrate"
+    "celebrate",
+    "landing-showcase"
   ]
 }
