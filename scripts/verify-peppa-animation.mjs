@@ -3,6 +3,7 @@ import fs from 'node:fs'
 
 const definition = JSON.parse(fs.readFileSync('public/strobi.avatar.json', 'utf8'))
 const homepage = fs.readFileSync('components/homepage-client.tsx', 'utf8')
+const styles = fs.readFileSync('app/globals.css', 'utf8')
 const animation = definition.animations['landing-showcase']
 
 assert.ok(animation, 'landing-showcase animation must exist')
@@ -17,5 +18,9 @@ assert.ok(
   'landing showcase should complete a cycle in under 14 seconds',
 )
 assert.match(homepage, /<Peppa animation="landing-showcase"/)
+assert.match(homepage, /function ScrollCompanion/)
+assert.match(homepage, /className="scroll-companion"/)
+assert.match(styles, /\.scroll-companion\s*\{[^}]*position:\s*fixed/)
+assert.match(styles, /\.scroll-companion\s*\{[^}]*bottom:\s*28px/)
 
 console.log('Peppa landing animation regression check passed')

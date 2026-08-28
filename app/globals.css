@@ -231,6 +231,30 @@
   overflow: hidden;
 }
 
+.scroll-companion {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 184px;
+  border: 1px solid #cfd8e7;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 0.96);
+  padding: 8px 12px 8px 8px;
+  box-shadow: 0 14px 36px rgb(45 63 104 / 0.14);
+  color: var(--page-ink);
+  font-size: 11px;
+  font-weight: 750;
+  pointer-events: none;
+}
+
+.scroll-companion .bs-avatar {
+  flex: 0 0 72px;
+}
+
 .hero-stage::after {
   position: absolute;
   right: -80px;
@@ -825,6 +849,12 @@
     right: 16px;
     bottom: 22px;
     min-width: 190px;
+  }
+
+  .scroll-companion {
+    right: 16px;
+    bottom: 16px;
+    width: 164px;
   }
 
   .statement-section,

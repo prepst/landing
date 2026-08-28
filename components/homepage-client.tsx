@@ -3,7 +3,7 @@
 import { createAvatar } from "@bible-strong/avatar-react"
 import "@bible-strong/avatar-react/styles.css"
 import { AnimatePresence, motion, useReducedMotion } from "motion/react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ThinkingOrb } from "thinking-orbs"
 
 import definition from "@/public/strobi.avatar.json"
@@ -79,12 +79,48 @@ function Reveal({
   )
 }
 
+function ScrollCompanion({ reduceMotion }: { reduceMotion: boolean | null }) {
+  const [isFollowing, setIsFollowing] = useState(false)
+
+  useEffect(() => {
+    const stage = document.querySelector<HTMLElement>(".hero-stage")
+    if (!stage || !("IntersectionObserver" in window)) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsFollowing(!entry.isIntersecting || entry.intersectionRatio < 0.25),
+      { threshold: [0, 0.25, 0.6] },
+    )
+
+    observer.observe(stage)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <AnimatePresence initial={false}>
+      {isFollowing && (
+        <motion.aside
+          className="scroll-companion"
+          initial={reduceMotion ? false : { opacity: 0, y: 18, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={reduceMotion ? undefined : { opacity: 0, y: 12, scale: 0.94 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          aria-label="Peppa is following along"
+        >
+          <Peppa animation="landing-showcase" size={72} ariaLabel="Peppa is following along" />
+          <span>Peppa is with you</span>
+        </motion.aside>
+      )}
+    </AnimatePresence>
+  )
+}
+
 export function HomepageClient() {
   const reduceMotion = useReducedMotion()
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
     <div className="site-shell">
+      <ScrollCompanion reduceMotion={reduceMotion} />
       <header className="site-nav">
         <a className="wordmark" href="#top" aria-label="PrepSt home">
           <span className="wordmark-mark" aria-hidden="true">P</span>
