@@ -233,11 +233,10 @@
 
 .scroll-companion {
   position: fixed;
+  top: 0;
   right: 28px;
-  top: 50%;
   z-index: 20;
   display: block;
-  margin-top: -36px;
   pointer-events: none;
 }
 
@@ -843,9 +842,6 @@
 
   .scroll-companion {
     right: 16px;
-    top: auto;
-    bottom: 16px;
-    margin-top: 0;
   }
 
   .statement-section,

@@ -2,7 +2,13 @@
 
 import { createAvatar } from "@bible-strong/avatar-react"
 import "@bible-strong/avatar-react/styles.css"
-import { AnimatePresence, motion, useReducedMotion } from "motion/react"
+import {
+  AnimatePresence,
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+} from "motion/react"
 import { useEffect, useState } from "react"
 import { ThinkingOrb } from "thinking-orbs"
 
@@ -81,6 +87,26 @@ function Reveal({
 
 function ScrollCompanion({ reduceMotion }: { reduceMotion: boolean | null }) {
   const [isFollowing, setIsFollowing] = useState(false)
+  const cursorY = useMotionValue(0)
+  const smoothY = useSpring(cursorY, {
+    stiffness: 180,
+    damping: 28,
+    mass: 0.55,
+  })
+
+  useEffect(() => {
+    const centerCompanion = () => cursorY.set(window.innerHeight / 2 - 36)
+    const handlePointerMove = (event: PointerEvent) => cursorY.set(event.clientY - 36)
+
+    centerCompanion()
+    window.addEventListener("pointermove", handlePointerMove, { passive: true })
+    window.addEventListener("resize", centerCompanion)
+
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove)
+      window.removeEventListener("resize", centerCompanion)
+    }
+  }, [cursorY])
 
   useEffect(() => {
     const stage = document.querySelector<HTMLElement>(".hero-stage")
@@ -100,9 +126,10 @@ function ScrollCompanion({ reduceMotion }: { reduceMotion: boolean | null }) {
       {isFollowing && (
         <motion.aside
           className="scroll-companion"
-          initial={reduceMotion ? false : { opacity: 0, y: 18, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={reduceMotion ? undefined : { opacity: 0, y: 12, scale: 0.94 }}
+          style={{ y: smoothY }}
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={reduceMotion ? undefined : { opacity: 0, scale: 0.94 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         >
           <Peppa animation="landing-showcase" size={72} ariaLabel="Peppa is following along" />
