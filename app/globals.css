@@ -234,25 +234,15 @@
 .scroll-companion {
   position: fixed;
   right: 28px;
-  bottom: 28px;
+  top: 50%;
   z-index: 20;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  width: 184px;
-  border: 1px solid #cfd8e7;
-  border-radius: 14px;
-  background: rgb(255 255 255 / 0.96);
-  padding: 8px 12px 8px 8px;
-  box-shadow: 0 14px 36px rgb(45 63 104 / 0.14);
-  color: var(--page-ink);
-  font-size: 11px;
-  font-weight: 750;
+  display: block;
+  margin-top: -36px;
   pointer-events: none;
 }
 
 .scroll-companion .bs-avatar {
-  flex: 0 0 72px;
+  display: block;
 }
 
 .hero-stage::after {
@@ -853,8 +843,9 @@
 
   .scroll-companion {
     right: 16px;
+    top: auto;
     bottom: 16px;
-    width: 164px;
+    margin-top: 0;
   }
 
   .statement-section,

@@ -104,10 +104,8 @@ function ScrollCompanion({ reduceMotion }: { reduceMotion: boolean | null }) {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={reduceMotion ? undefined : { opacity: 0, y: 12, scale: 0.94 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          aria-label="Peppa is following along"
         >
           <Peppa animation="landing-showcase" size={72} ariaLabel="Peppa is following along" />
-          <span>Peppa is with you</span>
         </motion.aside>
       )}
     </AnimatePresence>

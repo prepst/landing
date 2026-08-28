@@ -20,7 +20,11 @@ assert.ok(
 assert.match(homepage, /<Peppa animation="landing-showcase"/)
 assert.match(homepage, /function ScrollCompanion/)
 assert.match(homepage, /className="scroll-companion"/)
+assert.doesNotMatch(homepage, /Peppa is with you/)
 assert.match(styles, /\.scroll-companion\s*\{[^}]*position:\s*fixed/)
-assert.match(styles, /\.scroll-companion\s*\{[^}]*bottom:\s*28px/)
+assert.match(styles, /\.scroll-companion\s*\{[^}]*top:\s*50%/)
+assert.doesNotMatch(styles, /\.scroll-companion\s*\{[^}]*border:/)
+assert.doesNotMatch(styles, /\.scroll-companion\s*\{[^}]*background:/)
+assert.doesNotMatch(styles, /\.scroll-companion\s*\{[^}]*box-shadow:/)
 
 console.log('Peppa landing animation regression check passed')
